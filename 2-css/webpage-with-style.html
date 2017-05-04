@@ -3,41 +3,36 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <title>Webpage with style</title>
         <style type="text/css">
-            .bold
+            p
             {
-                font-size:80px;
-                font-weight:bold;
-            }
-            .italic
-            {
-                font-size:80px;
-                font-style:italic;
-            }
-            .uline
-            {
-                font-size:80px;
-                text-decoration: underline
-            }
-            a
-            {
+                font-size:20px;
                 font-family: 'Nunito', sans-serif;
-                font-size:80px;
-                text-decoration: none;
-                color:black;
+                text-align:right;
+                margin-bottom: 2px;
+                
             }
-            a:hover
+            div
             {
-                background-color:antiquewhite;
-                font-weight: bold;
+                width:700px;
+                background:green;
                 border-radius:5px;
-                padding:5px 5px;
+                padding:10px 10px;
+            }
+            .centered
+            {
+                text-align:center;
+            }
+            .justified
+            {
+                text-align:justify;
             }
         </style>
     </head>
     <body>
-        <p class="bold">This is some bold text.</p>
-        <p class="italic">This is some italic text. <span class="bold">And this is bold and italic.</span></p>
-        <p class="uline">This is some underlined text.</p>
-        <a href="">This is a link.</a>
+        <div>
+            <p>This is a right aligned text.</p>
+            <p class="centered">This is a center aligned text.</p>
+            <p class="justified">Text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
     </body>
 </html>
