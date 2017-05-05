@@ -1,1 +1,2 @@
 onclick: inline JS
+Internal Javascript
