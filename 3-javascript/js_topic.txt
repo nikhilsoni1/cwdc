@@ -1,2 +1,6 @@
 onclick: inline JS
 Internal Javascript
+Accesing Elements
+    document
+    getElementById
+    innerHTML
