@@ -4,12 +4,12 @@
     </head>
     <body>
         <p id="text">Hello World!</p>
+        <button id="myButton">Do It!</button>
         <script type="text/javascript">
-            //This is a one line comment
-            /*
-                Multiline Comment
-            */
-            document.getElementById("text").innerHTML="Hello Soni!"
+            document.getElementById("myButton").onclick=function()
+            {
+                document.getElementById("text").innerHTML="The text has been changed!";
+            }
         </script>
     </body>
 </html>
