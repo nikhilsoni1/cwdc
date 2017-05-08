@@ -8,4 +8,6 @@ Responding to a click
     document.getElementById("myButton").onclick=function()
         {
             document.getElementById("text").innerHTML="The text has been changed!";
-        }   
+        }
+Changing Website Content
+    String concatenation using '+'

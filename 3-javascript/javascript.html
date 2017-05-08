@@ -4,11 +4,23 @@
     </head>
     <body>
         <p id="text">Hello World!</p>
-        <button id="myButton">Do It!</button>
+        <button id="myButton">Replace</button>
+        <p id="second-para">Javascript is.......</p>
+        <button id="myButton2">Append</button>
+        <p id="emptyParagraph"></p>
+        <button id="createParagraph">Create Text</button>
         <script type="text/javascript">
             document.getElementById("myButton").onclick=function()
             {
                 document.getElementById("text").innerHTML="The text has been changed!";
+            }
+            document.getElementById("myButton2").onclick=function()
+            {
+                document.getElementById("second-para").innerHTML=document.getElementById("second-para").innerHTML+" APPENDED!";
+            }
+            document.getElementById("createParagraph").onclick=function()
+            {
+                document.getElementById("emptyParagraph").innerHTML="Hi There!"              
             }
         </script>
     </body>
