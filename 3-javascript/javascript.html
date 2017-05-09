@@ -9,6 +9,8 @@
         <button id="myButton2">Append</button>
         <p id="emptyParagraph"></p>
         <button id="createParagraph">Create Text</button>
+        <p id="moreText">This is some text</p>
+        <button id="styleText">Style Text</button>
         <script type="text/javascript">
             document.getElementById("myButton").onclick=function()
             {
@@ -21,6 +23,10 @@
             document.getElementById("createParagraph").onclick=function()
             {
                 document.getElementById("emptyParagraph").innerHTML="Hi There!"              
+            }
+            document.getElementById("styleText").onclick=function()
+            {
+                document.getElementById("moreText").style.display="none";
             }
         </script>
     </body>

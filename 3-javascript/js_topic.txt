@@ -11,3 +11,5 @@ Responding to a click
         }
 Changing Website Content
     String concatenation using '+'
+Manupulating Styles with Javascript
+    .style Property
