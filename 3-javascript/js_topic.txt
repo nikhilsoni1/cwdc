@@ -13,3 +13,5 @@ Changing Website Content
     String concatenation using '+'
 Manupulating Styles with Javascript
     .style Property
+Variables
+    Using an input box with a variable
