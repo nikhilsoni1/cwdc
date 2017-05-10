@@ -16,3 +16,4 @@ Manupulating Styles with Javascript
 Variables
     Using an input box with a variable
 Arrays
+If Statements
