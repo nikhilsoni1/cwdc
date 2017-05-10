@@ -1,30 +1,18 @@
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <title>Javascript</title>
-        <style type="text/css">
-            p
-            {
-                font-family: 'Nunito', sans-serif;
-                background-color: antiquewhite;
-                font-size: 50px;
-                border-radius: 5px;
-                width:400px;
-                padding:5px 5px;
-            }
-        </style>
     </head>
     <body>
-        <input type="text" id="textInput">
-        <button id="textChanger">Change the Text!</button>
-        <p id="content">This is some text!</p>
         <script type="text/javascript">
-            document.getElementById("textChanger").onclick=function()
-            {
-                var textEntered = "";
-                textEntered = document.getElementById("textInput").value;
-                document.getElementById("content").innerHTML = textEntered;
-            }
+            var myArray=new Array();
+            myArray[0]="Pizza";
+            myArray[1]="Chocolate";
+            var tweets=["Morning everybody!","I love coffee!"];
+            tweets.push("Back to work!");
+            tweets.splice(1,1,"Cornflakes for breakfast!","Num num");
+            console.log(myArray);
+            console.log(tweets);
+            //alert(tweets[1]);
         </script>
     </body>
 </html>
