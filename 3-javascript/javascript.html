@@ -4,16 +4,19 @@
     </head>
     <body>
         <p>What is the magic word?</p>
-        <p><input type="text" id="magicWord"></p>
-        <p><button id="checkMagicWord">Enter</button></p>
+        <p><input type="text" id="number"></p>
+        <p><button id="guess">Guess</button></p>
         <script type="text/javascript">
             var x;
-            document.getElementById("checkMagicWord").onclick=function()
+            var y;
+            document.getElementById("guess").onclick=function()
             {
-                x = document.getElementById("magicWord").value
-                if (x=="Soni"||x=="soni")
+                x = document.getElementById("number").value;
+                y = Math.floor((Math.random()*5)+1);
+                console.log(y);
+                if (x==y)
                     {
-                        alert("You're correct!");                  
+                        alert("Spot On!!");                  
                     }
                 else
                     {
