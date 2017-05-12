@@ -17,7 +17,7 @@
             document.getElementById("guess").onclick=function()
             {
                 input=document.getElementById("myNumber").value;
-                if(input>0 && input<6)
+                if(input>0 && input<11)
                 {
                     console.clear();
                     document.getElementById("result").innerHTML="";
@@ -26,7 +26,7 @@
                     while (gotIt==false)
                     {
                         myNumber=document.getElementById("myNumber").value;
-                        guess=Math.floor((Math.random()*5)+1);
+                        guess=Math.floor((Math.random()*10)+1);
                         console.log(guess);
                         if (guess==myNumber)
                         {
@@ -48,7 +48,7 @@
                 }
                 else
                 {
-                    alert("Please enter a number between 1 and 5 (inclusive)");
+                    alert("No one can possibly have "+input+" fingers!! Enter Again.");
                     document.getElementById("myNumber").value="";
                 }
             }
