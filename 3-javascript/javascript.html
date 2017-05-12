@@ -3,54 +3,16 @@
         <title>Javascript</title>
     </head>
     <body>
-        <p>How many fingers are you holding up?</p>
-        <p><input type="text" id="myNumber"></p>
-        <button id="guess">Guess!</button>
-        <div id="result"></div>
-        <div id="guessNum"></div>
+        <input type="text" id="input">
+        <button id="btn">Button</button>
         <script type="text/javascript">
-            var gotIt=false;
-            var myNumber;
-            var guess;
-            var numberOfGuesses=1;
-            var input;
-            document.getElementById("guess").onclick=function()
+            function alertMe(a)
             {
-                input=document.getElementById("myNumber").value;
-                if(input>0 && input<11)
-                {
-                    console.clear();
-                    document.getElementById("result").innerHTML="";
-                    document.getElementById("result").style.backgroundColor="white";
-                    document.getElementById("guessNum").innerHTML="";
-                    while (gotIt==false)
-                    {
-                        myNumber=document.getElementById("myNumber").value;
-                        guess=Math.floor((Math.random()*10)+1);
-                        console.log(guess);
-                        if (guess==myNumber)
-                        {
-                            gotIt=true;
-                            document.getElementById("result").innerHTML="Computer has got it correct!";
-                            document.getElementById("result").style.backgroundColor="green";
-                            document.getElementById("guessNum").innerHTML="Got it! It was a "+guess+". It took me "+numberOfGuesses+" guesses.";
-                            //alert("Got it! It was a "+guess+". It took me "+numberOfGuesses+" guesses.")
-                            numberOfGuesses=1;
-                        }
-                        else
-                        {
-                            document.getElementById("result").innerHTML="Computer has got it wrong!";
-                            document.getElementById("result").style.backgroundColor="red";
-                            numberOfGuesses++;
-                        }
-                    }
-                    gotIt=false;
-                }
-                else
-                {
-                    alert("No one can possibly have "+input+" fingers!! Enter Again.");
-                    document.getElementById("myNumber").value="";
-                }
+                alert(a);               
+            }
+            document.getElementById("btn").onclick=function()
+            {
+                alertMe(document.getElementById("input").value);
             }
         </script>
     </body>
