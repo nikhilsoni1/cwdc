@@ -1,3 +1,13 @@
 Calling jQuery
     Locally: <script src="jquery-3.2.1.min.js"></script>
-    Online: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    Online: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+Selecting an object
+    $(".<Selects a class object>").<Event>
+    (
+        function()
+    )
+    $("#<Selects an id object>").<Event>
+    (
+        function()
+    )
