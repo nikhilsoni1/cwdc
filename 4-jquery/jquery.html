@@ -11,17 +11,33 @@
                 background-color: green;
                 margin: 10px;
             }
+            .square
+            {
+                width: 150px;
+                height: 150px;
+                background-color: brown;
+                margin: 10px;
+            }
         </style>
     </head>
     <body>
         <div id="circle"></div>
-        <iframe src="http://www.bbc.com/"></iframe>
+        <div class="square"></div>
+        <div class="square"></div>
         <script type="text/javascript">
-            $("#circle").hover
+            $("div").click
             (
                 function()
                 {
-                    $("iframe").attr("src","https://www.ecowebhosting.co.uk")
+                    if ($(this).attr("id"))
+                    {
+                        alert("You clicked on a "+$(this).attr("id"));    
+                    }
+                    else
+                    {
+                        alert("You clicked on a "+$(this).attr("class"));    
+                    }
+                    
                 }
             )
         </script>

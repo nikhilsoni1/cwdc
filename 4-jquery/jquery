@@ -15,3 +15,20 @@ Changing Content
     $("<Object>").attr("<attritbute>","<change>")
 Hover Event
     $("<object>").hover
+This keyword
+    This refers to the contextual object for ex.
+    $("div").click
+    (
+        function()
+        {
+            if ($(this).attr("id")) //Here this refers to the object type div
+            {
+                alert("You clicked on a "+$(this).attr("id"));    
+            }
+            else
+            {
+                alert("You clicked on a "+$(this).attr("class"));    
+            }
+
+        }
+    )
