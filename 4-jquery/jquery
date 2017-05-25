@@ -11,3 +11,7 @@ Selecting an object
     (
         function()
     )
+Changing Content
+    $("<Object>").attr("<attritbute>","<change>")
+Hover Event
+    $("<object>").hover

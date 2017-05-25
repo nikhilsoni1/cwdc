@@ -11,46 +11,17 @@
                 background-color: green;
                 margin: 10px;
             }
-            .square
-            {
-                width: 150px;
-                height: 150px;
-                background-color: red;
-                margin: 10px;
-            }
         </style>
     </head>
     <body>
         <div id="circle"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <iframe src="http://www.bbc.com/"></iframe>
         <script type="text/javascript">
-            $("#circle").click
+            $("#circle").hover
             (
                 function()
                 {
-                    alert("Circle was clicked.");
-                }
-            )
-            $(".square").click
-            (
-                function()
-                {
-                    alert("Square was clicked.");
-                }
-            )
-            $("div").click
-            (
-                function()
-                {
-                    alert("A div was clicked!");
-                }
-            )
-            $("body").click
-            (
-                function()
-                {
-                    alert("Body was clicked!");
+                    $("iframe").attr("src","https://www.ecowebhosting.co.uk")
                 }
             )
         </script>
